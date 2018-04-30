@@ -1,0 +1,121 @@
+
+
+.theme-c1 {
+  background-color: $theme1; // Blue
+}
+
+.theme-c2 {
+  background-color: $theme2; // White
+}
+
+.theme-c3 {
+  background-color: $theme3; // yellow
+}
+
+.theme-c4 {
+  background-color: $theme4; // Dark Blue
+}
+
+.theme-c5 {
+  background-color: $theme5; // Greyish Blue
+}
+
+.text-c1 {
+  color: $text1; // Blue
+}
+
+.text-c2 {
+  color: $text2; // White
+}
+
+.text-c3 {
+  color: $text3; // Dark Blue
+}
+
+.text-red {
+  color: $red;
+}
+
+.bgc-red {
+  background-color: $red;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-purple {
+  color: $purple;  
+}
+
+.h100 {
+  min-height: 100%;
+}
+
+.h50 {
+  min-height: 50%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+.b-r {
+  border-radius: 30px;
+}
+
+.h_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.under-line {
+  position: relative;
+  width: 0px;
+}
+
+.under-line::before {
+  content: '';
+  width: inherit;
+  height: 3px;
+  background-color: $theme3;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  border-radius: 18px;
+}
+
+.yellow-btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  @include flex-center();
+}
+
+.h-pd {
+  padding: 50px 0 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.flex-direct {
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.home-section {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-image: url('../img/pattern.jpg');
+  background-position: center;
+  background-size: cover;
+}
