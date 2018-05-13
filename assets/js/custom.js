@@ -5,6 +5,10 @@
 
 $(document).ready(function(){
 
+  $('#bars').click(function(){
+    $(this).toggleClass("change");
+  });
+
   function lineAnimation(arg) {
       TweenLite.to(arg+" .under-line", 1, {width:"90", ease:Power2.easeInOut});
   }
